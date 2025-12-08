@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Controls } from './components/Controls';
 import { SimulationCanvas } from './components/SimulationCanvas';
@@ -53,7 +52,7 @@ const App: React.FC = () => {
       createProjectile('p1', '物体 A', COLORS[0])
   ]);
 
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number>(0);
 
   // --- Actions ---
 
